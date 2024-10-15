@@ -1,0 +1,51 @@
+package inheritance;
+
+public class Mainclass {
+	public static void main(String[] args) {
+		 Vehicle v1=new Vehicle();
+		 v1.print();
+		 //v1.price();// not acceble;
+		 
+		 Car c= new Car();
+		 c.numGher=10;
+		 c.color="white";
+		 c.print();
+		 
+		 c.printcar();
+		
+	}
+
+}
+public class Car extends Vehicle {
+	//String color;
+	//int price;
+	//int wheel;
+	
+	int numGher;
+	boolean isconvertible;
+	
+	void printcar() {
+		System.out.println("Car color:"+color);
+		System.out.println("No of Car Wheel"+wheel);
+		System.out.println("Car price:"+price);
+		System.out.println("numGher:"+numGher);
+		System.out.println("car is covetible:"+isconvertible);
+	}
+
+}
+public class Mainclass {
+	public static void main(String[] args) {
+		 Vehicle v1=new Vehicle();
+		 v1.print();
+		 //v1.price();// not acceble;
+		 
+		 Car c= new Car();
+		 c.numGher=10;
+		 c.color="white";
+		 c.print();
+		 
+		 c.printcar();
+		
+	}
+
+}
