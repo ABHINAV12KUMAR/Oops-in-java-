@@ -1,0 +1,25 @@
+package constructor;
+
+public class Student1 {
+	String name;
+	int Rollno;
+	
+	Student1(String name ,int Rollno){
+		this.name=name;
+		this.Rollno=Rollno;
+	}
+	void print() {
+		System.out.println(name+":"+Rollno);
+	}
+	
+	
+   public static void main(String[] args) {
+	Student1 s1=new Student1("shyaam",123);
+	System.out.println(s1);// address of Students1;
+	s1.print();
+	Student1 s2=new Student1("Ram",105);
+	System.out.println(s2);
+	s2.print();
+	
+}
+}
