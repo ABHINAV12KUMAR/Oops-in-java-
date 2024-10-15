@@ -1,0 +1,30 @@
+package constructor;
+
+public class Student {
+	String name;
+    int Rollno;
+    
+    Student(String n,int rn){
+    	name=n;
+    	Rollno=rn;
+    }
+	void print() {
+		System.out.println(name+":"+Rollno);
+	}
+	
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       Student s1=new Student("Abhinav",105);
+       s1.print();
+       //System.out.println(s1.name);
+       //System.out.println(s1.Rollno);
+       Student s2=new Student("Abhishek",107);
+       s1.print();
+       //System.out.println(s2.name);
+       //System.out.println(s2.Rollno);
+	}
+
+}
