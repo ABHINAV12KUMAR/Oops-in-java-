@@ -1,0 +1,25 @@
+package com.constructorchaing;
+class Delta{
+	Delta(){
+		System.out.println("Bisibele bath");
+	}
+	Delta(int a){
+		this();
+		System.out.println("Biriyani");
+	}
+
+}
+class Example extends Delta{
+	Example(){
+		System.out.println("Pulav");
+	}
+	Example(int a){
+		this();
+		System.out.println("Upma");
+	}
+}
+public class Mainclass6 {
+    public static void main(String[] args) {
+		Example ex= new Example();
+	}
+}
