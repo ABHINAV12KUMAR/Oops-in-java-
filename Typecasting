@@ -1,0 +1,20 @@
+package com.Typecasting;
+
+public class mainclass {
+
+	public static void main(String[] args) {
+	 double a =4.5;
+	 int b=(int)a;
+     System.out.println(b);
+     
+     
+     int d= 65;
+     char c=(char)a;
+     System.out.println(c);
+     
+     float x=75.34f;
+     byte y=(byte)x;
+     System.out.println(x);
+	}
+
+}
