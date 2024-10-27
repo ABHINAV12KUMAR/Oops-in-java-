@@ -1,0 +1,62 @@
+package com.jaspider.downcasting;
+class Alpha{
+	void test() {
+		System.out.println("Execuating test()...");
+	}
+}
+class Beta extends Alpha{
+	void disp() {
+		System.out.println("Execuating disp()....");
+	}
+}
+public class Mainclass1 {
+   public static void main(String[] args) {
+   Alpha a= new Beta();
+   a.test();
+   Beta b= (Beta)a;
+   b.test();
+   b.disp();
+}
+}
+
+Example no 2 
+
+
+package com.jaspider.downcasting;
+
+public class Product {
+
+}
+class Mobile extends Product{
+	
+}
+class Telivision extends Product{
+	
+}
+class Refrigerator extends Product{
+}
+public class Flipkart {
+   static void addTOkart(Product p) {
+	   if (p instanceof Mobile) {
+		   System.out.println("Delivery in bike");
+	   }
+	   else if(p instanceof Telivision) {
+		   System.out.println("Delivery in Tata ACE ");
+	   }
+	   else if(p instanceof Refrigerator) {
+		   System.out.println("Delivery in truck");
+	   }
+   }
+}
+public class Mainclass5 {
+public static void main(String[] args) {
+	Mobile mob=new Mobile();
+	Telivision tv= new Telivision();
+	Refrigerator rf=new Refrigerator();
+	Flipkart.addTOkart(tv);
+	Flipkart.addTOkart(mob);
+	Flipkart.addTOkart(rf);
+}
+}
+
+
