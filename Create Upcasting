@@ -1,0 +1,22 @@
+package com.jspider.upacasting;
+class Fruit{
+	String name;
+	void eat() {
+		System.out.println("Favourit friut is Mango");
+	}
+}
+class Apple extends Fruit{
+	void eat() {
+		System.out.println("eating Apple");
+	}
+}
+public class Mainclass1 {
+
+	public static void main(String[] args) {
+		
+       Fruit f= new Apple();
+       f.eat();
+    		   
+	}
+
+}
