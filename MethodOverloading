@@ -1,0 +1,20 @@
+package com.jspider.methodoverloading;
+class Amazon{
+	void payment() {
+		System.out.println("cod");
+	}
+	void payment(Long card) {
+		System.out.println("Card");
+	}
+	void payment(String username,String password) {
+		System.out.println("Netbanking");
+	}
+}
+public class Mainclass5 {
+    public static void main(String[] args) {
+		Amazon obj=new Amazon();
+		obj.payment();
+		obj.payment(13142536363737l);
+		obj.payment("Abhinav","Abhinav@123"); 
+	}
+}
