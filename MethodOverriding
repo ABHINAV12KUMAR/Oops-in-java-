@@ -1,0 +1,27 @@
+package com.jspider.methodoverriding;
+class parent{
+    void watchTv() {
+    	System.out.println("News/serial");
+    }
+}
+class child extends parent{
+	//@override
+	void watchTV() {
+		System.out.println("Sport/Movies");
+	}
+}
+public class Mainclass1 {
+
+	public static void main(String[] args) {
+		
+       parent p= new parent();
+       p.watchTv();
+       
+       child c=new child();
+       c.watchTV();
+       
+       parent ref=new child();
+       ref.watchTv();
+	}
+
+}
