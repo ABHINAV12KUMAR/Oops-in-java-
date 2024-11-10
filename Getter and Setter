@@ -1,0 +1,27 @@
+package accessmodifier;
+
+public class Student {
+     public String Name="Abhinav";
+     private int rollNumber;
+      
+     public int getrollNumber() {
+    	 return rollNumber;
+     }
+     public  void setrollnumber(int num ) {
+    	 rollNumber=num;
+     }
+}
+public class Studentuse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//             Student s1;
+             Student s1=new Student();
+             Student s2= new Student();
+             System.out.println(s1.Name);
+             s1.setrollnumber(105);
+             System.out.println(s1.getrollNumber());
+             
+	}
+    
+}
