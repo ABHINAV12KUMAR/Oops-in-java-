@@ -1,0 +1,43 @@
+package com.jspider.abstraction;
+abstract class animal{
+	animal(){
+		System.out.println("All animal is eating...");
+	}
+	abstract void Sound();
+}
+ class Dog extends animal{
+	  Dog(){
+		 super();
+	 }
+	public void Sound() {
+		System.out.println("Dog is barking");
+	}
+
+	
+}
+ class Tiger extends animal{
+	 Tiger(){
+		 super();
+	 }
+	 
+	public void Sound() {
+		System.out.println("Tiger is loar");
+	}
+}
+public class Mainclass4 {
+
+	public static void main(String[] args) {
+	 
+		animal a= new Dog();
+		animal a1=new Tiger();
+		//Tiger t= new Tiger();
+		//t.Sound();
+		a.Sound();
+		a1.Sound();
+		
+
+	}
+
+	
+
+}
